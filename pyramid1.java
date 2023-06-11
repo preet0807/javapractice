@@ -1,3 +1,4 @@
+package javapractice;
 public class pyramid1 {
 
         public static void main(String[] args) {
