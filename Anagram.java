@@ -9,11 +9,17 @@ public class Anagram{
         Scanner sc= new Scanner( System.in);
         String a= sc.next();
         String b= sc.next();
-        
-        char[] chararray= a.toCharArray();
-        char[] chararray2= b.toCharArray();
+        String a1s= a.toLowerCase();
+        String b1s= b.toLowerCase();
+
+       
+        char[] chararray= a1s.toCharArray();
+        char[] chararray2= b1s.toCharArray();
         Arrays.sort(chararray);
         Arrays.sort(chararray2);
+        //  if(a.length() != b.length()){
+        //     System.out.println("Not Anagrams");
+        // }
         if (Arrays.equals(chararray,chararray2)){
             System.out.println("Anagram");
         }
